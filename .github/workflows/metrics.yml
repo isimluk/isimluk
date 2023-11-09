@@ -15,7 +15,13 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Berlin
           config_display: large
+          base_indepth: yes
+          repositories: 200
+          repositories_forks: true
           plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_ignored: html
+          plugin_languages_analysis_timeout: 45
           # repositories_skipped:
           plugin_lines: yes
           plugin_lines_delay: 120
